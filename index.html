@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/png" href="images/Profile.jpg" />
-		<link rel="stylesheet" href="styles/style.css" />
+		<!-- <link rel="stylesheet" href="style.css" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portofolio Web Developer</title>
 	</head>
 	<body>
 		<header>
-			<h1 style="color: white">Muhamad Rizqi</h1>
+			<h1 style="color: black">Muhamad Rizqi</h1>
 			<nav>
 				<table>
 					<tr>
@@ -28,7 +28,7 @@
 		<section id="about">
 			<h2>Tentang Saya</h2>
 			<p>
-				Saya adalah seorang mahasiswa yang sedang menempuh pendidikan Saya
+				Saya adalah seorang mahasiswa yang sedang menempuh pendidikan, Saya
 				berminat dalam pengembangan web
 			</p>
 			<ul>
@@ -49,6 +49,11 @@
 							width="32"
 							height="32"
 					/></a>
+				</li>
+				<li>
+					<a href="mailto:mail@erzet.pw" target="_blank">
+						<img src="images/mail.png" alt="Mail Icon" width="32" height="32" />
+					</a>
 				</li>
 			</ul>
 		</section>
@@ -87,23 +92,25 @@
 		<hr />
 
 		<section id="contact">
+			<div id="status" class="status-message"></div>
 			<h2>Kontak</h2>
 			<form>
-				<label for="name">Nama:</label>
-				<input type="text" id="name" required /><br /><br />
-
 				<label for="email">Email:</label>
 				<input type="email" id="email" required /><br /><br />
+
+				<label for="name">Nama:</label>
+				<input type="text" id="name" required /><br /><br />
 
 				<label for="message">Pesan:</label><br />
 				<textarea id="message" rows="4" required></textarea><br /><br />
 
-				<button type="submit">Kirim</button>
+				<button id="submit" type="submit">Kirim</button>
 			</form>
 		</section>
-
+		<!-- <script src="index.js"></script> -->
 		<hr />
 
+		<div id="status" class="status-message"></div>
 		<footer>
 			<p>&copy; Rizqi. Semua Hak Dilindungi.</p>
 		</footer>
